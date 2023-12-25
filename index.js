@@ -34,7 +34,7 @@
 // server.listen(3001, () => {
 //   console.log("Server is running")
 // })
-
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const http = require('http');
@@ -64,7 +64,7 @@ function startSendingData() {
     } else {
       clearInterval(interval);
     }
-  }, 10000);
+  }, 15000);
 }
 
 io.on("connection", (socket) => {
@@ -80,6 +80,7 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3001, () => {
+server.listen(rpocess.env.PORT, () => {
   console.log("Server is running");
 });
+
