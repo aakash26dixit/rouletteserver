@@ -80,7 +80,7 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(rpocess.env.PORT, () => {
+server.listen(process.env.PORT, () => {
   console.log("Server is running");
 });
 
