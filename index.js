@@ -34,7 +34,9 @@
 // server.listen(3001, () => {
 //   console.log("Server is running")
 // })
-require('dotenv').config()
+ const dotenv = require('dotenv').config()
+
+
 const express = require('express');
 const app = express();
 const http = require('http');
